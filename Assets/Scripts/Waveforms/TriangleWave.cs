@@ -6,6 +6,6 @@ public class TriangleWave : WaveFormBase {
 	public override WaveType Type => WaveType.Triangle;
 
 	public override float GetOffset(float time, float wavelength, float amplitude, float phase) {
-		return (2 * Mathf.PI / amplitude) * Mathf.Asin(Mathf.Sin((BaseScale * (2 * Mathf.PI * time - phase)) / wavelength));
+		return (2 * amplitude / Mathf.PI) * Mathf.Asin(Mathf.Sin((BaseScale * (2 * Mathf.PI * time - phase)) / wavelength));
 	}
 }

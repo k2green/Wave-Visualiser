@@ -6,7 +6,7 @@ public abstract class WaveFormBase {
 
 	public abstract WaveType Type { get; }
 
-	protected const float BaseScale = 10;
+	public const float BaseScale = 360;
 
 	public abstract float GetOffset(float time, float wavelength, float amplitude, float phase);
 
